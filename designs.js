@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('td').attr("class", 'cells') ;
       }
     }
-    table.preventDefault();
+    event.preventDefault();
 
     $("td").click(function addColor() {
 
