@@ -3,6 +3,7 @@ $(document).ready(function () {
   $('#sizePicker').submit(function makeGrid(table) {  // When size is submitted by the user, call makeGrid()
     var r = $('#inputHeight').val(); // Select size input
     var c = $('#inputWidth').val(); // Select size input
+    $("tr").remove();
     for (var i = 1; i <= r; i++) {
       $('table').append("<tr></tr>");
       for (var j = 1;j <= c; j++) {
